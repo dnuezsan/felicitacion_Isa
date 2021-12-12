@@ -1,0 +1,545 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'navidad';
+    src: url(../recursos/fuentes/Red\ Christmas\ -\ Personal\ Use.otf);
+}
+/*Fin fuentes*/
+
+.maincontainer{
+    z-index: -1;
+}
+
+/* html */
+/* html{
+    width: 1440px;
+} */
+
+/* Body */
+body{
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+/*Header*/
+header{
+    background-color: white;
+    height: 76px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#cabecera{
+    height: 113px;
+    width: 100%;
+}
+
+#cabecera img{
+    float: left;
+    height: 76px;
+}
+
+
+#cabecera h1{
+    margin: 0;
+    margin: 0 auto;
+    float: left;
+    width: 89.201%;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top: 18px;
+    color: #006293;
+    font-weight: bold;
+    padding-left: 3%;
+    font-size: 1.5em;
+}
+
+/*main*/
+
+main{
+    height: fit-content;
+    padding-top: 50px;
+}
+
+#contenedor{
+    display: inline-block;
+}
+
+main h1{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: "navidad";
+    letter-spacing: 20px;
+    font-size: 5em;
+    padding-top: 60px;
+    color: #FAE404;
+    position: absolute;
+}
+
+/*Zona central*/
+#central{
+    height: 750px;
+    width: 65%;
+    position: absolute;
+    margin-left: 17.5%;
+    padding-top: 160px;
+}
+/*Libro*/
+#central img{
+    width: 100%;
+    height: 730px;
+    z-index: 0;
+}
+
+#pagIzquierda, #pagDerecha{
+    width: 40%;
+    height: 680px;
+    position: absolute;
+    margin-top: 20px;
+    border: 1px solid #FAE404;
+    border-radius: 4px;
+}
+
+#pagIzquierda{
+    margin-left: 8%;
+}
+
+#pagDerecha{
+    margin-left: 54%;
+}
+
+#pagDerecha div{
+    position: relative;
+}
+
+#asha img, #parti img, #cam img, #destor img, #robot img{
+    height: auto;
+}
+
+#asha{
+    width: 40% ;
+    left: 35% ;
+    top: 35% ;
+}
+
+#parti{
+    width: 12% ;
+    left: 10%;
+    bottom: 40%;
+}
+
+#cam{
+    width: 20%;
+    left: 75%;
+    bottom: 26%;
+}
+
+#destor {
+    width: 15% ;
+    left: 75%;
+    top: 15%;
+}
+
+#robot{
+    width: 35%;
+    left: 2%;
+    bottom: 28%;
+}
+
+/*Esquinas*/
+#marco div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 500px;
+}
+
+#marco div img{
+    width: 100%;
+}
+
+#sDerecha, #iDerecha{
+    margin-left: 46%;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #006293;
+    height: 55px;
+    width: 96.552%;
+    margin-top: 134px;
+    color: white;
+    display: block;
+    text-align: center;
+    bottom: 0px;
+    padding-left: 3.5%;
+}
+
+footer div {
+    width: 2%;
+    height: 38px;
+    position: relative;
+    display: inline-block;
+}
+
+#face{
+    left: 28%;    
+}
+
+#twi{
+    left: 29%;
+}
+
+#insta{
+    left: 30%;
+}
+
+footer div img {
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 18px;
+    padding-left: 3.5%;
+}
+
+/*Media querys*/
+
+
+
+/*primera media*/
+@media (min-width:1400px) and (max-width: 1600px){
+
+    header{
+        background-color: white;
+        height: 76px;
+        width: 1440px; /*100% del ancho del body*/
+        margin-bottom: 30px;
+    }
+    
+    #cabecera{
+        height: 113px;
+    }
+    
+    #cabecera img{
+        float: left;
+        height: 76px;
+    }
+    
+    
+    #cabecera h1{
+        margin: 0;
+        margin: 0 auto;
+        float: left;
+        width: fit-content;
+        font-family: "Roboto";
+        letter-spacing: 2px;
+        font-size: 1.5em;
+        margin-top: 18px;
+        color: #006293;
+        font-weight: bold;
+        padding-left: 42px; /*2.917% del tamaño del header 1440px*/
+        padding-top: 10px;
+    }
+    
+    /*main*/
+    
+    main{
+        height: fit-content;
+        padding-top: 20px;
+    }
+    
+    #contenedor{
+        display: inline-block;
+        height: 820px;
+    }
+    
+    main h1{
+        margin: 0 auto;
+        width: 1440px; /*100% del tamaño del body*/
+        text-align: center;
+        font-family: "navidad";
+        letter-spacing: 20px;
+        font-size: 4em;
+        padding-top: 60px;
+        color: #FAE404;
+        position: absolute;
+    }
+    
+    /*Zona central*/
+    #central{
+        height: 750px;
+        width: 896px;   /*62.223% de tamaño de #contenedor*/
+        position: absolute;
+        margin-left: 272px; /*18.889% del tamaño de #contenedor*/
+        padding-top: 150px;
+    }
+    /*Libro*/
+    #central img{
+        width: 100%;
+        height: 550px;
+        z-index: 0;
+    }
+    
+    #pagIzquierda, #pagDerecha{
+        width: 358.5px; /*40,012% de #central*/
+        height: 500px;
+        position: absolute;
+        margin-top: 20px;
+        border: 1px solid #FAE404;
+        border-radius: 4px;
+    }
+    
+    #pagIzquierda{
+        margin-left: 71.6px; /*7,991% del tamaño de #central*/
+    }
+    
+    #pagDerecha{
+        margin-left: 484px; /*54,018% del tamaño de #central*/
+    }
+    
+    #pagDerecha div{
+        position: relative;
+    }
+    
+    #asha img, #parti img, #cam img, #destor img, #robot img{
+        height: auto;
+    }
+    
+    #asha{
+        width: 161px; /*44,91% del tamaño de #pagDerecha*/
+        left: 115px;
+        top: 100px;
+    }
+    
+    #parti{
+        width: 43px; /*23.05% del tamaño de #pagDerecha*/
+        left: 36px;
+        bottom: 200px;
+    }
+    
+    #cam{
+        width: 72px; /*20,084% del tamaño de #pagDerecha*/
+        left: 269px;
+        bottom: 150px;
+    }
+    
+    #destor {
+        width: 53px; /*14,784% del tamaño de #pagDerecha*/
+        left: 269px;
+        top: 115px;
+    }
+    
+    #robot{
+        width: 143px; /*39,889% del tamaño de #pagDerecha*/
+        left: 7px;
+        bottom: 90px;
+    }
+    
+    /*Esquinas*/
+    #marco div{
+        position: relative;
+        float: left;
+        width: 434px; /*30,139% del main*/
+        height: 390px;
+    }
+    
+    #marco div img{
+        width: 100%;
+    }
+    
+    #sDerecha, #iDerecha{
+        margin-left: 561.2px; /*38,973% del tamaño del main */
+    }
+    
+    
+    /*Footer*/
+    footer{
+        background-color: #006293;
+        height: 55px;
+        width: 1137.25px; /*78,976% del tamaño del body*/
+        color: white;
+        margin-top: 75px;
+        padding-left: 302.75px; /* 21.025% respecto del tamaño que deberia tener el footer, en concreto 1440px*/
+    }
+    
+    footer div {
+        width: 28px; /*2,463% del tamaño del footer*/
+        height: 38px;
+        position: relative;
+    }
+    
+    #face{
+        left: 876px; /*77,029% del ancho del footer*/
+        bottom: 26px;
+    }
+    
+    #twi{
+        left: 918px; /*80,722% del ancho del footer*/
+        bottom: 63px;
+    }
+    
+    #insta{
+        left: 960px; /*84,415% del ancho del footer*/
+        bottom: 101px;
+    }
+    
+    footer div img {
+        width: 100%;
+    }
+    
+    span{
+        display: inline-block;
+        margin-top: 18px;
+        padding-left: 302.75px; /*26,6% del ancho del footer*/
+    }
+
+/*segunda media*/
+@media (min-width: 360px) and (max-width: 411px){
+
+    html{
+        width: 360px;
+    }
+
+    header{
+        width: 360px; /*100% del tamaño del body*/
+        height: 45px;
+    }
+
+    #cabecera h1{
+        font-size: 5em;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-left: 10px; /*2,778% del tamaño del header*/
+    }
+    
+    #cabecera img{
+        height: 45px;
+    }
+
+    main{
+        padding: 0;
+    }
+
+    main h1{
+        width: 360px; /*100% del tamaño del main*/
+        letter-spacing: 3px;
+        font-size: 45px;
+        padding-top: 14px;
+    }
+
+    #contenedor{
+        width: 360px; /*100% del tamaño del main*/
+        height: 506px;
+    }
+
+    #marco div{
+        width: 97.2px; /*27% del tamaño del main*/
+        height: 360px; 
+    }
+
+    #sDerecha, #iDerecha{
+        margin-left: 165px; /*45,834% de #contenedor*/
+    }
+
+    #central{
+        padding-top: 60px;
+        margin-left: 24px; /*6,667% del tamaño de #contenedor*/
+        width: 313px; /*86.945% del contenedor*/
+    }
+
+    #central img{
+        height: 360px; /*100% del tamaño de #contenedor*/
+    }
+
+    #pagIzquierda, #pagDerecha{
+        width: 125px; /*39,936% de #central*/
+        height: 320px;
+    }
+
+    #pagIzquierda{
+        margin-left: 25px; /*7,988% del tamaño de #central*/
+    }
+
+    #pagDerecha{
+        margin-left: 169px; /*53.994% del tamaño de #central*/
+    }
+
+    #pagDerecha img{
+        height: auto;
+    }
+
+    #asha{
+        width: 81.4px; /*65,128% del tamaño de #pagDerecha*/
+        left: 27.5px;
+        top: 96px;
+    }
+
+    #parti{
+        width: 28.8px; /*23.05% del tamaño de #pagDerecha*/
+        left: 12.5px;
+        bottom: 109px;
+    }
+
+    #cam{
+        width: 44px; /*35.21% del tamaño de #pagDerecha*/
+        left: 78.9px;
+        bottom: 73.5px;
+    }
+
+    #destor{
+        width: 27.5px; /*22.01% del tamaño de #pagDerecha*/
+        left: 88px;
+        top: 115px;
+    }
+
+    #robot{
+        width: 88px; /*70,4% del tamaño de #pagDerecha*/
+        left: 19px;
+        bottom: 6px;
+    }
+
+    #asha img{
+        height: auto;
+    }
+
+    footer{
+        width: 287.3px; /*79.813% del body*/
+        margin-top: 0px;
+        padding-left: 72.7px; /*20,187% del tamaño del body*/
+    }
+
+    footer div{
+        width: 18px; /*5% del tamaño del footer*/
+        height: 19px;
+
+    }
+
+    footer span{
+        margin-top: 0;
+        font-size: 15px;
+        padding-left: 0px;
+    }
+
+    #face{
+        left: 0px;
+        top: 7.5px;
+    }
+    
+    #twi{
+        left: 94.8px; /*33% del ancho del footer*/
+        bottom: 10px;
+    }
+    
+    #insta{
+        left: 201.117px; /*70% del ancho del footer*/
+        bottom: 30px;
+    }
+
+}
+}

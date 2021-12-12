@@ -1,0 +1,474 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'navidad';
+    src: url(../recursos/fuentes/Red\ Christmas\ -\ Personal\ Use.otf);
+}
+/*Fin fuentes*/
+
+.maincontainer{
+    z-index: -1;
+}
+
+/* html{
+    width: 1440px;
+} */
+
+/* Body */
+body{
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+/*Header*/
+header{
+    background-color: white;
+    height: 76px;
+    width: 100%; /* 1440px respecto del body */
+    margin-bottom: 30px;
+}
+
+#cabecera{
+    height: 113px;
+    width: 100%;
+}
+
+#cabecera img{
+    float: left;
+    height: 76px;
+}
+
+
+#cabecera h1{
+    margin: 0;
+    margin: 0 auto;
+    float: left;
+    width: 89.201%;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top: 18px;
+    color: #006293;
+    font-weight: bold;
+    padding-left: 3%;
+    font-size: 1.5em;
+}
+
+/*main*/
+
+main{
+    height: fit-content;
+    padding-top: 50px;
+}
+
+#contenedor{
+    display: inline-block;
+}
+
+main h1{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: "navidad";
+    letter-spacing: 20px;
+    font-size: 5em;
+    padding-top: 60px;
+    color: #FAE404;
+    position: absolute;
+}
+
+/*Zona central*/
+#central{
+    height: 750px;
+    width: 65%;
+    position: absolute;
+    margin-left: 17.5%;
+    padding-top: 160px;
+}
+/*Libro*/
+#central img{
+    width: 100%;
+    height: 730px;
+    z-index: 0;
+}
+
+#pagIzquierda, #pagDerecha{
+    width: 40%;
+    height: 680px;
+    position: absolute;
+    margin-top: 20px;
+    border: 1px solid #FAE404;
+    border-radius: 4px;
+}
+
+#pagIzquierda{
+    margin-left: 8%;
+}
+
+#pagDerecha{
+    margin-left: 54%;
+}
+
+#pagDerecha div{
+    position: relative;
+}
+
+#asha img, #parti img, #cam img, #destor img, #robot img{
+    height: auto;
+}
+
+#asha{
+    width: 40% ;
+    left: 35% ;
+    top: 35% ;
+}
+
+#parti{
+    width: 12% ;
+    left: 10%;
+    bottom: 40%;
+}
+
+#cam{
+    width: 20%;
+    left: 75%;
+    bottom: 26%;
+}
+
+#destor {
+    width: 15% ;
+    left: 75%;
+    top: 15%;
+}
+
+#robot{
+    width: 35%;
+    left: 2%;
+    bottom: 28%;
+}
+
+/*Esquinas*/
+#marco div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 500px;
+}
+
+#marco div img{
+    width: 100%;
+}
+
+#sDerecha, #iDerecha{
+    margin-left: 46%;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #006293;
+    height: 55px;
+    width: 96.552%;
+    margin-top: 134px;
+    color: white;
+    display: block;
+    text-align: center;
+    bottom: 0px;
+    padding-left: 3.5%;
+}
+
+footer div {
+    width: 2%;
+    height: 38px;
+    position: relative;
+    display: inline-block;
+}
+
+#face{
+    left: 28%;    
+}
+
+#twi{
+    left: 29%;
+}
+
+#insta{
+    left: 30%;
+}
+
+footer div img {
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 18px;
+    padding-left: 3.5%;
+}
+
+/*Media querys*/
+
+/*primera media*/
+@media (min-width:1400px) and (max-width: 1600px){
+
+    #cabecera h1{
+        font-size: 1.5em;
+        padding-top: 10px;
+        width: 88.978%;
+        padding-left: 2.917%; /*42px del tamaño del header 1440px*/
+    }
+
+    main{
+        padding-top: 20px;
+    }
+
+    main h1{
+        font-size: 4em;
+        width: 100%; /*1440px = main */
+    }
+
+    #contenedor{
+        height: 820px;
+    }
+    
+    #marco div{
+        width: 31%;
+        height: 390px;
+    }
+
+    #sDerecha, #iDerecha{
+        margin-left: 37%;
+    }
+
+    #central{
+        width: 62.223%; /* 896px de tamaño de #contenedor 1440px*/
+        height: 790px;
+        padding-top: 150px;
+        margin-left: 18.889%; /* 272px del tamaño de #contenedor 1440px*/
+    }
+
+    #central img{
+        height: 550px;
+    }
+
+    #central div img{
+        height: auto;
+    }
+
+    #pagIzquierda, #pagDerecha{
+        width: 40.012%; /* 358.5px respecto a #central 896px*/
+        height: 500px; /* Esta altura debe ser constante */
+    }
+
+    #pagIzquierda{
+        margin-left: 7.991%; /* 71.6px respecto a #central 896px*/
+    }
+    
+    #pagDerecha{
+        margin-left: 54.018%; /* 484px respecto a #central 896px*/
+    }
+    
+    #pagDerecha div{
+        position: relative;
+    }
+
+    #asha{
+        width: 44.91%; /* 161px respecto #pagDerecha 358.5px*/
+        left: 32%;
+        top: 20%;
+    }
+
+    #asha img{
+        height: 120px;
+    }
+
+    #parti{
+        width: 11.995%; /* 43px respecto #pagDerecha 358.5px*/
+        bottom: 40%;
+    }
+
+    #cam{
+        width: 20.084%; /* 72px respecto #pagDerecha 358.5px*/
+        bottom: 30%;
+    }
+
+    #robot{
+        width: 39.889%; /* 143px respecto #pagDerecha 358.5px*/
+        bottom: 18%;
+        width: 40%;
+    }
+
+    #destor{
+        width: 14.784%; /* 53px respecto #pagDerecha 358.5px*/
+        top: 23%;
+    }
+
+    footer{
+        margin-top: 75px;
+        padding-left: 21.025%; /*  302.75px respecto del tamaño que deberia tener el footer. en concreto 1440px*/
+        width: 78.976%; /* 1137.25px respecto body 1440px* ESTABA MAL con un 100% */
+        text-align: left;
+    }
+
+    footer span{
+        padding-left: 26.599%;
+        font-size: 0.64em;
+    }
+
+    /* Estas cajas son relativas */
+    footer div{ 
+        width: 2.463%; /* 28px respecto footer 1137.25px*/
+    }
+
+    #face{
+        left: 32%; /* 363,917px respecto a su posicion original */
+    }
+    
+    #twi{
+        left: 33%; /* 375,283px respecto a su posicion original*/
+    }
+    
+    #insta{
+        left: 34%; /* 386,65px respecto a su posicion original*/
+    }
+
+}
+
+/*segunda media*/
+@media (min-width: 360px) and (max-width: 411px){
+
+    header{
+        width: 100%; /* 360px respecto body 360px*/
+        height: 45px;
+    }
+
+    #cabecera h1{
+        font-size: 12px;
+        text-transform: uppercase;
+        width: 78.532%; /* 282.7px respecto body 360px */
+        padding-left: 2.778%; /* 10px respecto header 360px*/
+    }
+    
+    #cabecera img{
+        height: 45px;
+    }
+
+    main{
+        padding-top: 0px;
+    }
+
+    main h1{
+        width: 100%; /* 360px respecto main 360px*/
+        letter-spacing: 3px;
+        font-size: 45px;
+        padding-top: 14px;
+    }
+
+
+    #marco div{
+        width: 27%; /* 97.2px respecto main 360px*/
+        height: auto;
+    }
+
+    #sDerecha, #iDerecha{
+        margin-left: 45.834%; /* 165px respecto #contenedor 360px*/
+    }
+
+    #iIzquierda, #iDerecha{
+        height: fit-content;
+        margin-top: 71%;
+    }
+
+    #central{
+        padding-top: 60px;
+        margin-left: 6.667%; /* 24px respecto de #contenedor 360px*/
+        width: 86.945%; /*313px respecto contenedor 360px*/
+        height: auto;
+    }
+
+    #central img{
+        height: 360px; /* Debe permanecer constante */
+    }
+
+    #pagIzquierda, #pagDerecha{
+        width: 39.936%; /* 125px respecto #central 313px*/
+        height: 320px; /* Debe permanecer constante */
+    }
+
+    #pagDerecha img{
+        height: auto;
+    }
+
+    #asha{
+        width: 65.128%; /* 81.4px respecto #pagDerecha 125px*/
+        left: 22%;
+        top: 30%;
+    }
+
+    #parti{
+        width: 23.05%; /* 28.8px respecto #pagDerecha 125px*/
+        bottom: 34%;
+    }
+
+    #cam{
+        width: 35.21%; /* 44px respecto #pagDerecha 125px*/
+        left: 63%;
+        bottom: 23%;
+    }
+
+    #destor{
+        width: 22.01%; /* 27.5px respecto #pagDerecha 125px*/
+        left: 70%;
+        top: 36%;
+    }
+
+    #robot{
+        width: 70.4%; /* 88px respecto #pagDerecha 125px*/
+        left: 15%;
+        bottom: 2%;
+    }
+
+    #asha img{
+        height: auto;
+    }
+
+    #face{
+        left: -28%; /* -90.6167px respecto su posicion original */
+        top: 14%;
+    }
+    
+    #twi{
+        left: -5%; /* -16.1833px respecto su posición original */
+        bottom: 21%;
+    }
+    
+    #insta{
+        left: 18%; /* 58.25px respecto su posicion */
+        bottom: 54%;
+    }
+
+    footer{
+        padding-left: 10.1%; /* 36,35px respecto body 360px ESTABA MAL con 20.195%*/
+        width: 89.91%; /* 214.583px respecto body 360px ESTABA MAL con 79.813%*/
+        height: auto;
+        position: fixed;
+    }
+
+    footer div {
+        display: inline-block;
+        height: auto;
+        width: 6.27%; /* 18px respecto footer 287.3px*/
+        height: 19px;
+
+    }
+
+    footer span{
+        margin-top: 0;
+        width: 66.3%; /* 214.583px respecto footer 323.667px*/
+        font-size: 15px;
+        display: block;
+        padding-left: 11.235%; /* 36,35px respecto footer 323.667px */
+    }
+
+}
