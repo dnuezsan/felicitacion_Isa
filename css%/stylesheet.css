@@ -306,7 +306,7 @@ span{
 
     footer{
         margin-top: 75px;
-        padding-left: 21.025%; /*  302.75px respecto del tamaño que deberia tener el footer. en concreto 1440px*/
+        padding-left: 21.025%; /*  302.75px respecto del tamaño que deberia tener el footer. en concreto 1337.25px*/
         width: 78.976%; /* 1137.25px respecto body 1440px* ESTABA MAL con un 100% */
         text-align: left;
     }
@@ -449,7 +449,7 @@ span{
     }
 
     footer{
-        padding-left: 10.1%; /* 36,35px respecto body 360px ESTABA MAL con 20.195%*/
+        padding-left: 10.1%; /* 36,35px respecto footer 214.583px ESTABA MAL con 20.195%*/
         width: 89.91%; /* 214.583px respecto body 360px ESTABA MAL con 79.813%*/
         height: auto;
         position: fixed;
